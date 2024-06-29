@@ -161,7 +161,19 @@ main {
   margin: 10px;
   text-align: center;
 }
-
+.play-button {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: #218838;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  border-radius: 10px;
+  font-weight: 600;
+}
 .responsive-video {
   width: 100%;
   height: 300px; /* Встановлюємо однаковий розмір для відео */

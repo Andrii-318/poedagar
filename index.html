@@ -7,6 +7,9 @@
       content="width=device-width, initial-scale=1.0" />
     <title>Годинник POEDAGAR</title>
     <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap"
+      rel="stylesheet" />
+    <link
       rel="stylesheet"
       href="dist/css/main.min.css" />
   </head>
@@ -93,29 +96,44 @@
         <div class="feature-container">
           <div class="feature-box">
             <video
+              id="video1"
               class="responsive-video"
               src="src/video/video1.MP4"
               muted
-              autoplay
               loop></video>
+            <button
+              class="play-button"
+              data-video="video1">
+              Відтворити відео
+            </button>
             <p>Фосфорний циферблат</p>
           </div>
           <div class="feature-box">
             <video
+              id="video2"
               class="responsive-video"
               src="src/video/video2.MP4"
               muted
-              autoplay
               loop></video>
+            <button
+              class="play-button"
+              data-video="video2">
+              Відтворити відео
+            </button>
             <p>Елегантний дизайн</p>
           </div>
           <div class="feature-box">
             <video
+              id="video3"
               class="responsive-video"
               src="src/video/video3.MP4"
               muted
-              autoplay
               loop></video>
+            <button
+              class="play-button"
+              data-video="video3">
+              Відтворити відео
+            </button>
             <p>Висока вологостійкість</p>
           </div>
         </div>
@@ -125,39 +143,30 @@
         <ul>
           <li>Скло що не царапається.</li>
           <li>Водонепроникний до 30 метрів.</li>
-          <li>фосфорна підсвітка.</li>
+          <li>Фосфорна підсвітка.</li>
           <li>Диаметр: 42 мм.</li>
           <li>Форма корпусу: квадрат.</li>
           <li>Товщина корпусу: 10мм.</li>
           <li>Діаметр циферблата:40мм.</li>
           <li>Довжина стрічки:20см.</li>
           <li>Ширина стрічки:20мм.</li>
-          <li>тип ремінця: Нержавіюча сталь.</li>
+          <li>Тип ремінця: Нержавіюча сталь.</li>
           <li>Застібка: прихована, кнопка.</li>
           <li>Кольори циферблата: чорний, синій.</li>
-          <li>вага: 130грам.</li>
+          <li>Вага: 130грам.</li>
         </ul>
       </section>
-      <!-- <section class="reviews">
-        <h2>Отзывы наших довольных покупателей</h2>
-        <div class="review">
-          <p>Виталий Серов: Отличные часы! Ношу каждый день.</p>
-        </div>
-        <div class="review">
-          <p>Анна Коваль: Подарила мужу, он в восторге!</p>
-        </div>
-      </section> -->
       <section class="delivery">
         <h2>Доставка та оплата</h2>
         <div class="delivery-box">
           <img
-            src="src/svg/delivery.svg"
+            src="src/svg/delivery.png"
             alt="Delivery" />
           <p>Самовивіз з Нової пошти або кур'єр Нової Пошти</p>
         </div>
         <div class="payment-box">
           <img
-            src="src/svg/payment.svg"
+            src="src/svg/payment.png"
             alt="Payment" />
           <p>Готівкою при отриманні або безготівковий переказ</p>
         </div>
@@ -199,18 +208,21 @@
           id="last-name"
           name="last-name"
           required />
+
         <label for="first-name">Ім'я:</label>
         <input
           type="text"
           id="first-name"
           name="first-name"
           required />
+
         <label for="middle-name">По батькові:</label>
         <input
           type="text"
           id="middle-name"
           name="middle-name"
           required />
+
         <label for="phone-number">Номер телефону:</label>
         <input
           type="text"
@@ -219,6 +231,28 @@
           placeholder="+380"
           pattern="\+380[0-9]{9}"
           required />
+
+        <label for="city">Населений пункт:</label>
+        <input
+          type="text"
+          id="city"
+          name="city"
+          required />
+
+        <label for="region">Область:</label>
+        <input
+          type="text"
+          id="region"
+          name="region"
+          required />
+
+        <label for="post-office">Номер відділення "Нової Пошти":</label>
+        <input
+          type="text"
+          id="post-office"
+          name="post-office"
+          required />
+
         <button
           type="submit"
           class="confirm-button">
@@ -231,7 +265,6 @@
         </p>
       </form>
     </div>
-
     <!-- Форма для замовлення в 1 клік -->
     <div
       id="quick-order-form-container"

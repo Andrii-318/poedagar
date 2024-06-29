@@ -5,6 +5,7 @@
   font-weight: normal;
   font-style: normal;
 }
+
 * {
   margin: 0;
   padding: 0;
@@ -14,19 +15,21 @@
 
 body {
   line-height: 1.6;
-
-  font: "latoregular", sans-serif;
+  font-family: "latoregular", sans-serif;
 }
+
 h1 {
   color: beige;
   font-size: 500;
   font-weight: bold;
 }
+
 p {
   font-weight: bold;
   font-size: 14px;
   line-height: 25px;
 }
+
 header {
   background: radial-gradient(
     circle,
@@ -110,7 +113,7 @@ main {
   overflow: hidden;
   position: relative;
   width: 100%;
-  height: 100vh; /* Висота слайдера на всю висоту екрану */
+  height: 100vh;
   background: #f4f4f4;
   box-sizing: border-box;
 }
@@ -131,7 +134,7 @@ main {
 .gallery img {
   width: 100%;
   height: 100%;
-  object-fit: cover; /* Заповнюємо всю область видимості */
+  object-fit: cover;
 }
 
 .features {
@@ -164,7 +167,7 @@ main {
 
 .responsive-video {
   width: 100%;
-  height: 300px; /* Встановлюємо однаковий розмір для відео */
+  height: 300px;
   object-fit: cover;
 }
 
@@ -217,7 +220,7 @@ main {
   height: auto;
   margin-bottom: 10px;
 }
-/* Footer */
+
 footer {
   background: radial-gradient(
     circle,
@@ -235,6 +238,7 @@ footer {
 .footer-content {
   margin: 0 auto;
 }
+
 .instagram-logo {
   position: fixed;
   bottom: 20px;
@@ -253,7 +257,7 @@ footer {
 .instagram-logo:hover {
   transform: scale(1.1);
 }
-/* Стилі для форми замовлення */
+
 .order-form-container {
   position: fixed;
   top: 0;
@@ -329,7 +333,7 @@ footer {
 .order-message.visible {
   display: block;
 }
-/* Стилі для форми швидкого замовлення */
+
 .quick-order-form-container {
   position: fixed;
   top: 0;

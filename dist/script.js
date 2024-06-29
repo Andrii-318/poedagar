@@ -1,11 +1,20 @@
 document.addEventListener("DOMContentLoaded", function () {
   // Обробка відео
-  const videos = document.querySelectorAll("video.responsive-video");
-  videos.forEach((video) => {
-    video.muted = true;
-    video.autoplay = true;
-    video.loop = true;
-    video.play();
+  const buttons = document.querySelectorAll(".play-button");
+
+  buttons.forEach((button) => {
+    button.addEventListener("click", function () {
+      const videoId = this.getAttribute("data-video");
+      const video = document.getElementById(videoId);
+
+      if (video.paused) {
+        video.play();
+        this.textContent = "Зупинити відео";
+      } else {
+        video.pause();
+        this.textContent = "Відтворити відео";
+      }
+    });
   });
 
   // Обробка форми замовлення

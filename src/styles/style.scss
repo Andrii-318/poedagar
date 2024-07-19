@@ -416,21 +416,24 @@ footer {
   line-height: 22px;
   font-weight: 900;
 }
-.radio-group div {
+.radio-group {
   display: inline-block;
-  margin-right: 15px;
 }
+// .radio-group div {
+//   display: inline-block;
+//   // margin-right: 15px;
+// }
 .radio-group input[type="radio"] {
   margin-right: 5px;
   transform: scale(1.2);
 }
 
-@media (max-width: 600px) {
-  .radio-group div {
-    display: block;
-    margin-bottom: 10px;
-  }
-}
+// @media (max-width: 600px) {
+//   .radio-group div {
+//     display: block;
+//     // margin-bottom: 10px;
+//   }
+// }
 
 /* Стилі для форми швидкого замовлення */
 .quick-order-form-container {

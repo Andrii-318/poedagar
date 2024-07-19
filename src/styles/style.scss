@@ -341,7 +341,6 @@ footer {
 
 .order-form label {
   display: block;
-  /* margin: 10px 0 5px; */
   margin: 0px 0px 1px;
 }
 
@@ -416,6 +415,16 @@ footer {
   font-size: 18px;
   line-height: 22px;
   font-weight: 900;
+}
+
+.order-form div {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.order-form input[type="radio"] {
+  margin-right: 10px;
 }
 
 /* Стилі для форми швидкого замовлення */

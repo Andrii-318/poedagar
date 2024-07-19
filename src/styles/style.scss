@@ -418,14 +418,13 @@ footer {
 }
 
 .order-form div {
-  display: flex;
-  align-items: center;
   margin-bottom: 10px;
+  display: contents;
 }
 
-.order-form input[type="radio"] {
-  margin-right: 10px;
-}
+// .order-form input[type="radio"] {
+//   margin-right: 10px;
+// }
 
 /* Стилі для форми швидкого замовлення */
 .quick-order-form-container {

@@ -425,6 +425,13 @@ footer {
   transform: scale(1.5);
 }
 
+@media (max-width: 600px) {
+  .radio-group div {
+    display: block;
+    margin-bottom: 10px;
+  }
+}
+
 /* Стилі для форми швидкого замовлення */
 .quick-order-form-container {
   position: fixed;

@@ -340,12 +340,10 @@ footer {
 }
 
 .order-form label {
-  // display: block;
-  // margin: 0px 0px 1px;
+  margin: 0 0 1px;
   display: flex;
-  flex-direction: column;
+  justify-content: center;
   align-items: center;
-  align-content: center;
 }
 
 .order-form input {
@@ -427,7 +425,7 @@ footer {
 }
 
 .radio-group input[type="radio"] {
-  // margin-right: 5px;
+  margin-right: 5px;
   transform: scale(1.2);
 }
 

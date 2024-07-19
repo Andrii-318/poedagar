@@ -416,15 +416,18 @@ footer {
   line-height: 22px;
   font-weight: 900;
 }
-.radio-group {
+// .radio-group {
+//   display: flex;
+//   flex-direction: column;
+//   align-items: center;
+// }
+
+.radio-group input[type="radio"] {
+  // margin-right: 5px;
+  transform: scale(1.2);
   display: flex;
   flex-direction: column;
   align-items: center;
-}
-
-.radio-group input[type="radio"] {
-  margin-right: 5px;
-  transform: scale(1.2);
 }
 
 /* Стилі для форми швидкого замовлення */

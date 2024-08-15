@@ -74,7 +74,7 @@ document.addEventListener("DOMContentLoaded", function () {
     const message = `Нове замовлення:\nПрізвище: ${lastName}\nІм'я: ${firstName}\nПо батькові: ${middleName}\nНомер телефону: ${phoneNumber}\nНаселений пункт: ${city}\nОбласть: ${region}\nНомер відділення "Нової Пошти": ${postOffice}\nЦиферблат: ${dialColor}`;
 
     fetch(
-      `https://api.telegram.org/bot7383790369:AAFnONSWjsJzrXUcrTKtbv0gkOA06S1Ceek/sendMessage?chat_id=594070082&text=${encodeURIComponent(
+      `https://api.telegram.org/bot7383790369:?chat_id=2&text=${encodeURIComponent(
         message
       )}`
     )
@@ -118,7 +118,7 @@ document.addEventListener("DOMContentLoaded", function () {
     const quickMessage = `Нове швидке замовлення:\nНомер телефону: ${quickPhoneNumber}`;
 
     fetch(
-      `https://api.telegram.org/bot7383790369:AAFnONSWjsJzrXUcrTKtbv0gkOA06S1Ceek/sendMessage?chat_id=594070082&text=${encodeURIComponent(
+      `https://api.telegram.org/bot7383790369:/sendMessage?chat_id=&text=${encodeURIComponent(
         quickMessage
       )}`
     )
